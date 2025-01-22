@@ -10,7 +10,7 @@ export class CryptoWidget extends HTMLElement {
   }
 
   connectedCallback() {
-    this.classList.add('crypto-widget', 'p-4', 'bg-gray-100', 'rounded-xl');
+    this.classList.add('crypto-widget', 'p-4', 'rounded-xl');
     this.startUpdating();
   }
 
@@ -38,7 +38,7 @@ export class CryptoWidget extends HTMLElement {
   render() {
     this.innerHTML = `
       <div class="mb-4">
-        <h2 class="text-2xl font-bold mb-4">Crypto Prices</h2>
+        <h2 class="text-2xl font-bold mb-4 text-black">Crypto Scoreboard</h2>
         ${this.coins.map(coin => PriceCard(coin)).join('')}
         ${LastUpdate(this.lastUpdate)}
       </div>

@@ -8,7 +8,7 @@ export function PriceCard({ name, price, change }) {
   return `
     <div class="bg-white rounded-lg shadow-md p-4 mb-4">
       <div class="flex justify-between items-center">
-        <h3 class="text-lg font-semibold capitalize">${name}</h3>
+        <h3 class="text-lg font-semibold capitalize ${getChangeClass(change)}">${name}</h3>
         <div class="text-right">
           <div class="text-xl font-bold">$${formatPrice(price)}</div>
           <div class="text-sm ${getChangeClass(change)}">

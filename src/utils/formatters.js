@@ -11,5 +11,5 @@ export function getChangeSymbol(value) {
 }
 
 export function getChangeClass(value) {
-  return value >= 0 ? 'text-green-600' : 'text-red-600';
+  return value >= 0 ? 'text-custom-green' : 'text-custom-red';
 }
